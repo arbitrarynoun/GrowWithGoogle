@@ -6,16 +6,14 @@ var pixelCanvas = $("#pixelCanvas");
 
 
 // Select size input
+var	height = $('#inputHeight').val();
+var	width = $('#inputWidth').val();
 
 // this thing grabs the values of the inputs and
 // (hopefully) iterates rows with cells based equal 
 // to the values entered
 function makeGrid(height, width) {
-	height = $('#inputHeight').val();
-	width = $('#inputWidth').val();
-	var row = document.createElement("tr");
-	var column = document.createElement("td");
-
+	
 	pixelCanvas.append( function () {
 		for (i = 0; i < height; i++) {
 			document.createElement("td");
@@ -29,7 +27,7 @@ function makeGrid(height, width) {
 // When size is submitted by the user, call makeGrid()
 
 submitButton.click( function () {
-	alert( makeGrid() );	
+	makeGrid();	
 });
 
 
