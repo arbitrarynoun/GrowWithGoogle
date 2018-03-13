@@ -9,20 +9,6 @@ var pixelCanvas = $("#pixelCanvas");
 var	height = $('#inputHeight').val();
 var	width = $('#inputWidth').val();
 
-// this thing grabs the values of the inputs and
-// (hopefully) iterates rows with cells based equal 
-// to the values entered
-function makeGrid(height, width) {
-	
-	pixelCanvas.append( function () {
-		for (i = 0; i < height; i++) {
-			document.createElement("td");
-			for (j = 0; j < width; j++) {
-				document.createElement("tr");
-			}
-		}
-	});
-}
 
 // When size is submitted by the user, call makeGrid()
 
@@ -32,13 +18,31 @@ submitButton.click( function () {
 
 
 
-// Old Stuff I Ditched
+// Old Stuff I Ditched, Newest to Oldest
 
-/* 
-/  submitButton.click( function() {
-/  	alert( $('#inputHeight').val() );
-/  	pixelCanvas.append(
-/  		"<tr><td><p>hi</p></td></tr>"
-/  	); 
-/  });
+ /*
+ / // this thing grabs the values of the inputs and
+ / // (hopefully) iterates rows with cells based equal 
+ / // to the values entered
+ / function makeGrid(height, width) {
+ /	
+ /	pixelCanvas.append( function () {
+ /		for (i = 0; i < height; i++) {
+ /			document.createElement("td");
+ /			for (j = 0; j < width; j++) {
+ /				document.createElement("tr");
+ /			}
+ /		}
+ /	});
+ / }
+*/
+
+
+ /* 
+ /  submitButton.click( function() {
+ /  	alert( $('#inputHeight').val() );
+ /  	pixelCanvas.append(
+ /  		"<tr><td><p>hi</p></td></tr>"
+ /  	); 
+ /  });
 */
