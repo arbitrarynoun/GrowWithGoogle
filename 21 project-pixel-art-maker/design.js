@@ -21,7 +21,7 @@ var tr = document.createElement("tr");
 var td = document.createElement("td");
 
 // Make a number of tr rows equal to the input value "height" from jQuery
-function newRow(table) {
+function newRow(height) {
 	for (var i = 0; i < height; i++) {
 		document.createElement("tr");
 		break;
@@ -29,7 +29,7 @@ function newRow(table) {
 }
 
 // Make a number of td calls equal to the input value "height" from jQuery
-function makeCell(table) {
+function makeCell(width) {
 	for (var j = 0; j < width; j++) {
 		document.createElement("td");
 		break;
